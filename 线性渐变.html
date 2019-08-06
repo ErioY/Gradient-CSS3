@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>线性渐变</title>
+    <style>
+    div{
+        width: 180px;
+        height: 180px;
+        margin: 0 5px 5px 0;
+        font-family: "黑体";
+        font-size: 18px;
+        text-align: center;
+        line-height: 180px;
+        float: left;
+    }
+    /* 线性渐变-从上到下 */
+    div:nth-of-type(1){
+        background: linear-gradient(#03a9f4, #f71ab95e);
+    }
+    /* 线性渐变-从左到右 */
+    div:nth-of-type(2){
+       background: -webkit-linear-gradient(left, #03a9f4, #f71ab95e);
+    }
+    /* 线性渐变-对角 */
+    div:nth-of-type(3){
+        background: -webkit-linear-gradient(left top, #03a9f4, #f71ab95e);
+    }
+    /* 自定义角度 */
+    div:nth-of-type(4){
+        background: -webkit-linear-gradient(150deg, #03a9f4, #f71ab95e);
+    }
+    /* 使用多个颜色结点 */
+    div:nth-of-type(5){
+        background: -webkit-linear-gradient(pink,#03a9f4, #f71ab95e);
+    }
+    /* 使用透明度 */
+    div:nth-of-type(6){
+        background: -webkit-linear-gradient(right, rgba(247,26,185,0.37 ),rgba(3,169,244,0.8));
+    }
+    /* 重复的线性渐变 */
+    div:nth-of-type(7){
+        background: -webkit-repeating-linear-gradient(#03a9f4 30%, #f71ab95e 70%);
+    }
+    </style>
+</head>
+<body>
+    <div>从上到下</div>
+    <div>从左到右</div>
+    <div>对角</div>
+    <div>自定义角度</div>
+    <div>使用多个颜色结点</div>
+    <div>使用透明度</div>
+    <div>重复的线性渐变</div>
+</body>
+</html>
